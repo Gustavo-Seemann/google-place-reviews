@@ -1,6 +1,10 @@
 # Google Place Reviews
 
-O Google Place Reviews é um projeto criado para resgatar e salvar as avaliações realizadas no restaurante de sua escolha presente no Google Maps. O projeto foi desenvolvido em Python para ser utilizado em um Serverless Framework, salvando as avalições em um banco de dados PostgreSQL.
+O Google Place Reviews é um projeto criado para resgatar e salvar as avaliações realizadas no restaurante de sua escolha presente no Google Maps. O projeto foi desenvolvido em Python para ser utilizado em um Serverless Framework, salvando as avalições em um banco de dados PostgreSQL. O projeto se utiliza da API SerpApi.
+
+## Requisitos
+
+É necessário possuir uma chave válida da API **SerpApi**. 
 
 ## Instalação
 Rode os comandos em ordem. 
