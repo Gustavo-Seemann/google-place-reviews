@@ -1,3 +1,4 @@
+org: "YOUR_ORG"
 app: google-place-reviews
 service: google-reviews-serpapi
 frameworkVersion: '3'

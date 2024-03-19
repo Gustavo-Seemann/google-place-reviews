@@ -17,9 +17,11 @@ Base = declarative_base()
 API_KEY = os.environ['API_KEY']
 
 store_ids = [
-    'ChIJW43Oz8JxGZURggGzEv4NNSw', # N1 CHICKEN
-    'ChIJSXGmKWlwGZUR7W-PMNcKFfw', #RESTAURANTE LANCHERIA DO GORDO
-    'ChIJd21ozb1xGZURpnuOii5KvHg', # LASANHA GOURMET
+    # EXEMPLOS DE RESTAURANTES.
+    'ChIJW43Oz8JxGZURggGzEv4NNSw', # N1 CHICKEN - 22 Reviews.
+    'ChIJSXGmKWlwGZUR7W-PMNcKFfw', # RESTAURANTE LANCHERIA DO GORDO - 19 Reviews.
+    'ChIJd21ozb1xGZURpnuOii5KvHg', # LASANHA GOURMET - 7 Reviews.
+    # Adicionar os IDs da Lojas que desejar aqui.
 ]
 
 
