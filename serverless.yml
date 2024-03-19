@@ -1,0 +1,43 @@
+app: google-place-reviews
+service: google-reviews-serpapi
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  environment:
+    API_KEY: "YOUR_SERPAPI_KEY"
+    POSTGRES_URL: "YOUR_POSTGRES_URL_CONNECTION"
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "secretsmanager:GetSecretValue"
+      Resource: "*"
+    - Effect: "Allow"
+      Action:
+        - "lambda:InvokeFunction"
+      Resource: "*"
+    - Effect: "Allow"
+      Action:
+        - "logs:CreateLogGroup"
+        - "logs:CreateLogStream"
+        - "logs:PutLogEvents"
+      Resource: "arn:aws:logs:*:*:*"
+
+functions:
+  get_store_reviews:
+    handler: handler.get_store_reviews
+    timeout: 30
+    events:
+      - http:
+          path: get-store-reviews
+          method: get
+
+plugins:
+  - serverless-offline
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: True
