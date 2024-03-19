@@ -4,7 +4,12 @@ O Google Place Reviews é um projeto criado para resgatar e salvar as avaliaçõ
 
 ## Requisitos
 
-É necessário possuir uma chave válida da API **SerpApi**. 
+- É necessário possuir uma chave válida da API **SerpApi**. 
+
+- Serverless Instalado.
+```
+npm install -g serverless
+```
 
 ## Instalação
 Rode os comandos em ordem. 
